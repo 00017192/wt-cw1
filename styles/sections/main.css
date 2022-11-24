@@ -6,6 +6,11 @@ section#preview {
   height: 900px;
   background: url(../../assets/images/header-background.jpg) center / cover no-repeat;
 }
+@media screen and (max-width: 768px) {
+  section#preview {
+    margin-top: -80px;
+  }
+}
 section#preview .preview-wrapper {
   position: relative;
   top: -130px;
