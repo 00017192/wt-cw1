@@ -62,12 +62,8 @@ header.menu-opened nav ul:first-of-type li a {
     padding: 50px 0;
   }
 }
-header[data-mode="dark"] ul:nth-of-type(2) li:nth-of-type(2) svg path,
-header.menu-opened ul:nth-of-type(2) li:nth-of-type(2) svg path {
-  stroke: var(--dark-grey);
-}
-header[data-mode="dark"] ul:nth-of-type(2) li:not(:nth-of-type(2)) svg path,
-header.menu-opened ul:nth-of-type(2) li:not(:nth-of-type(2)) svg path {
+header[data-mode="dark"] ul:nth-of-type(2) li svg path,
+header.menu-opened ul:nth-of-type(2) li svg path {
   fill: var(--dark-grey);
 }
 header[data-mode="dark"] h1,
@@ -84,10 +80,7 @@ header[data-mode="dark"] ul:first-of-type li a:hover,
 header.menu-opened ul:first-of-type li a:hover {
   border-bottom-color: var(--dark-grey);
 }
-header[data-mode="light"] ul:nth-of-type(2) li:nth-of-type(2) svg path {
-  stroke: var(--white);
-}
-header[data-mode="light"] ul:nth-of-type(2) li:not(:nth-of-type(2)) svg path {
+header[data-mode="light"] ul:nth-of-type(2) li svg path {
   fill: var(--white);
 }
 header[data-mode="light"] h1,

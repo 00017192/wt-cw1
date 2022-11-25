@@ -1,0 +1,129 @@
+/* section partnership */
+section#partnership {
+  padding: 140px 0;
+  background: var(--merino);
+  /* shorten padding on smaller screen size */
+  /* main delivery wrapper */
+}
+@media screen and (max-width: 576px) {
+  section#partnership {
+    padding: 60px 0;
+  }
+}
+section#partnership .partnership-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  /* justify on center on smaller screen size */
+}
+@media screen and (max-width: 992px) {
+  section#partnership .partnership-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+}
+section#partnership .partnership-wrapper h2 {
+  width: 100%;
+  font-size: 48px;
+  line-height: 52px;
+  margin-bottom: 30px;
+}
+section#partnership .partnership-wrapper img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+section#partnership .partnership-wrapper > p {
+  width: 100%;
+}
+section#partnership .partnership-wrapper > p:first-of-type {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+section#partnership .partnership-wrapper > p:last-of-type {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 42px;
+}
+section#partnership .partnership-wrapper button {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  padding: 28px 50px;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 70px;
+  background: var(--bizarre);
+  border-radius: 60px;
+}
+section#partnership .partnership-wrapper button:hover {
+  cursor: pointer;
+  background: var(--double-spanish-white);
+}
+section#partnership .partnership-wrapper .about-ceo-review {
+  padding: 60px;
+  background: var(--bizarre);
+  /* shorten padding of the box */
+  /* wrapper of avatar, ceo info and signature*/
+}
+@media screen and (max-width: 576px) {
+  section#partnership .partnership-wrapper .about-ceo-review {
+    padding: 24px 12px;
+  }
+}
+section#partnership .partnership-wrapper .about-ceo-review > p {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* change direction of layout on smaller screen size */
+  /* ceo avatar and info */
+  /* signature */
+}
+@media screen and (max-width: 576px) {
+  section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper .about-ceo-review-owner {
+  display: inline-flex;
+  column-gap: 12px;
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper .about-ceo-review-owner .about-ceo-review-image {
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+  overflow: hidden;
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper .about-ceo-review-owner .about-ceo-review-image img {
+  width: 100%;
+  height: 100%;
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper .about-ceo-review-owner .about-ceo-review-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper .about-ceo-review-owner .about-ceo-review-info p:first-of-type {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper .about-ceo-review-owner .about-ceo-review-info p:last-of-type {
+  font-size: 12px;
+  font-weight: 300;
+}
+section#partnership .partnership-wrapper .about-ceo-review .about-ceo-review-wrapper img {
+  width: 140px;
+  height: auto;
+}
