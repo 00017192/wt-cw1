@@ -6,6 +6,7 @@ header {
   right: 0;
   z-index: 2;
   /* after scrolled/menu opened states */
+  /* header on other pages */
   /* menu opened state -> actions */
   /* media queries on 0-768px; 768px+ */
   /* dark mode or menu opened states -> change colors to dark */
@@ -14,9 +15,13 @@ header {
 }
 header.scrolled,
 header.menu-opened {
-  background: #F5ECE3;
+  background: var(--merino);
   border-radius: 1px solid var(--dark-grey);
   box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.5);
+}
+header.other-page {
+  background: var(--merino);
+  border-bottom: 1px solid var(--dark-grey);
 }
 header.menu-opened .menu-burger-container button span {
   transform-origin: center;
@@ -178,6 +183,9 @@ header nav ul:last-of-type {
   }
 }
 header nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--white);
   border-bottom: 1px solid transparent;
 }

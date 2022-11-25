@@ -5,6 +5,9 @@
   --white: #FFFFFF;
   --merino: #F5ECE3;
   --bizarre: #EEE4DA;
+  --double-spanish-white: #E7D2BD;
+  --sandal: #B28E74;
+  --pearl-bush: #E3DAD0;
 }
 /* remove default styles to all elements */
 * {
@@ -60,5 +63,15 @@ a {
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container-min {
+    max-width: calc(100% - 24px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-min {
+    max-width: 840px;
   }
 }
