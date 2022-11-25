@@ -6,41 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malika & Co</title>
-  <link rel="stylesheet" href="./styles/fonts.css">
-  <link rel="stylesheet" href="./styles/common.css">
-  <link rel="stylesheet" href="./styles/sections/header.css">
-  <link rel="stylesheet" href="./styles/sections/main.css">
-  <link rel="stylesheet" href="./styles/sections/footer.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/sections/header.css">
+  <link rel="stylesheet" href="./css/sections/main.css">
+  <link rel="stylesheet" href="./css/sections/footer.css">
 </head>
 
 <body>
-  <header>
+  <header data-mode="light">
     <div class="container">
       <nav>
-        <button class="menu-burger">
-          <span></span>
-          <span></span>
-        </button>
+        <div class="menu-burger-container">
+          <button>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
         <ul>
-          <li data-icon="false" data-responsive-visible="false"><a href="#">Catalog</a></li>
-          <li data-icon="false" data-responsive-visible="false"><a href="#">About</a></li>
-          <li data-icon="false" data-responsive-visible="false"><a href="#">Delivery</a></li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Contacts</a></li>
         </ul>
         <div class="logo-container">
           <h1>Malika & Co</h1>
         </div>
         <ul>
-          <li data-icon="false" data-responsive-visible="false"><a href="#">Contacts</a></li>
-          <li data-icon="true" data-responsive-visible="false">
-            <a href="#">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15 15L10.9556 10.9556M12.6667 6.83333C12.6667 10.055 10.055 12.6667 6.83333 12.6667C3.61167 12.6667 1 10.055 1 6.83333C1 3.61167 3.61167 1 6.83333 1C10.055 1 12.6667 3.61167 12.6667 6.83333Z"
-                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </li>
-          <li data-icon="true" data-responsive-visible="true">
+          <li>
             <a href="#">
               <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -52,7 +45,7 @@
               </svg>
             </a>
           </li>
-          <li data-icon="true" data-responsive-visible="false">
+          <li>
             <a href="#">
               <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -347,6 +340,8 @@
       </div>
     </div>
   </footer>
+
+  <script type="module" src="./app.js"></script>
 </body>
 
 </html>

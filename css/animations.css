@@ -1,0 +1,18 @@
+/* for menu opening -> menu list */
+@keyframes open-menu {
+  from {
+    background: transparent;
+  }
+  to {
+    background: var(--merino);
+  }
+}
+/* for menu opening -> menu items */
+@keyframes open-menu-items {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

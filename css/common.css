@@ -1,0 +1,64 @@
+/* colors variables */
+:root {
+  --dark-grey: #555555;
+  --sandrift: #AC8F78;
+  --white: #FFFFFF;
+  --merino: #F5ECE3;
+  --bizarre: #EEE4DA;
+}
+/* remove default styles to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cera Pro", sans-serif;
+  color: var(--dark-grey);
+  transition: all 400ms ease-in-out;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* class to disable scrolling temporarily */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+/* container class with media queries */
+.container {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: calc(100% - 24px);
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
