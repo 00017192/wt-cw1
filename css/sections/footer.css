@@ -15,7 +15,7 @@ footer .footer-wrapper .footer-heading h5 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
-  color: #AC8F78;
+  color: var(--sandrift);
   /* media queries on 0-768px;768px+ */
 }
 @media screen and (min-width: 768px) and (max-width: 1400px) {
@@ -89,10 +89,10 @@ footer .footer-wrapper .footer-main .about-company ul li {
   width: 36px;
   height: 36px;
   border-radius: 18px;
-  background: #F5ECE3;
+  background: var(--merino);
 }
 footer .footer-wrapper .footer-main .about-company ul li:hover {
-  background: #E7D2BD;
+  background: var(--double-spanish-white);
   cursor: pointer;
 }
 footer .footer-wrapper .footer-main .about-company img {
@@ -137,11 +137,17 @@ footer .footer-wrapper .footer-main .contacts ul {
   flex-direction: row;
   column-gap: 20px;
 }
+@media screen and (max-width: 576px) {
+  footer .footer-wrapper .footer-main .contacts ul {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+}
 @media screen and (max-width: 768px) {
   footer .footer-wrapper .footer-main .contacts ul li {
     padding: 15px 30px;
     border-radius: 60px;
-    background: #F5ECE3;
+    background: var(--merino);
   }
 }
 footer .footer-wrapper .footer-main .contacts ul li a {
@@ -151,8 +157,8 @@ footer .footer-wrapper .footer-main .contacts ul li a {
   column-gap: 4px;
 }
 footer .footer-wrapper .footer-main .contacts ul li a:hover {
-  color: #B28E74;
+  color: var(--sandal);
 }
 footer .footer-wrapper .footer-main .contacts ul li a:hover svg path {
-  fill: #B28E74;
+  fill: var(--sandal);
 }

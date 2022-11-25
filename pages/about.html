@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malika & Co</title>
-  <link rel="stylesheet" href="./css/fonts.css">
-  <link rel="stylesheet" href="./css/animations.css">
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/sections/header.css">
-  <link rel="stylesheet" href="./css/sections/main.css">
-  <link rel="stylesheet" href="./css/sections/footer.css">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sections/header.css">
+  <link rel="stylesheet" href="../css/sections/about.css">
+  <link rel="stylesheet" href="../css/sections/footer.css">
 </head>
 
 <body>
-  <header data-mode="light">
+  <header class="other-page" data-mode="dark">
     <div class="container">
       <nav>
         <div class="menu-burger-container">
@@ -25,12 +25,12 @@
           </button>
         </div>
         <ul>
-          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="#">About</a></li>
           <li><a href="#">Delivery</a></li>
           <li><a href="#">Contacts</a></li>
         </ul>
         <div class="logo-container">
-          <a href="./">
+          <a href="../">
             <h1>Malika & Co</h1>
           </a>
         </div>
@@ -64,170 +64,66 @@
     </div>
   </header>
   <main>
-    <section id="preview">
-      <div class="container">
-        <div class="preview-wrapper">
-          <h2>Capsule Collection</h2>
-        </div>
-      </div>
-    </section>
-    <section id="products">
-      <div class="container">
-        <div class="products-wrapper">
-          <div class="product-item" data-main-card="true">
-            <img src="./assets/images/product-item-1.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h3>Care</h3>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-2.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-3.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-4.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-4.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-3.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-2.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="true">
-            <img src="./assets/images/product-item-5.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h3>Beauty</h3>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="true">
-            <img src="./assets/images/product-item-6.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h3>Brows</h3>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-4.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-3.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-          <div class="product-item" data-main-card="false">
-            <img src="./assets/images/product-item-2.jpg" alt="Product Item">
-            <div class="product-item-info">
-              <h4>Perfect brows</h4>
-              <span class="product-item-price">54 €</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="about">
-      <div class="container">
+      <div class="container container-min">
         <div class="about-wrapper">
-          <div class="about-image">
-            <img src="./assets/images/about-image.jpg" alt="About Image">
+          <h2>About Malika & Co</h2>
+          <p>
+            This website was created to fulfill Web Technology module’s requirements and does not represent an actual
+            company or service
+          </p>
+          <img src="../assets/images/about-image-1.jpg" alt="About Image 1">
+          <p>The brand seeks to build respect among the audience for its products, so that the presence of the company's
+            products is a sign of prestige, since the focus of the business is focused on exclusive sales, but not on
+            the mass market. </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <h3>600+</h3>
+              <span>Men on the team</span>
+            </div>
+            <div class="stat-item">
+              <h3>1.6 m</h3>
+              <span>Followers at social network</span>
+            </div>
+            <div class="stat-item">
+              <h3>35</h3>
+              <span>Offline shops</span>
+            </div>
+            <div class="stat-item">
+              <h3>64</h3>
+              <span>Products of own production</span>
+            </div>
+            <div class="stat-item">
+              <h3>2x</h3>
+              <span>Revenue growth annually</span>
+            </div>
+            <div class="stat-item">
+              <h3>3+</h3>
+              <span>Location at world</span>
+            </div>
           </div>
-          <div class="about-info">
-            <h5>Malika & Co</h5>
-            <p>This website was created to fulfill Web Technology module’s requirements and does not represent an actual
-              company or service</p>
+          <p>The brand seeks to build respect among the audience for its products, so that the presence of the company's
+            products is a sign of prestige, since the focus of the business is focused on exclusive sales, but not on
+            the mass market. The brand seeks to build respect among the audience for its products, so that the presence
+            of the company's products is a sign of prestige, since the focus of the business is focused on exclusive
+            sales, but not on the mass market.</p>
+          <img src="../assets/images/about-image-2.jpg" alt="About Image 2">
+          <p>Each Malika brand product is truly unique -<br>everything is thought out to the smallest detail.</p>
+          <div class="about-ceo-review">
             <p>The brand seeks to build respect among the audience for its products, so that the presence of the
               company's products is a sign of prestige, since the focus of the business is focused on exclusive sales,
-              but not on the mass market.</p>
-            <div class="about-company-ceo">
-              <p>Malika<br><span>CEO, Founder</span></p>
-              <img src="./assets/images/signature.png" alt="CEO Signature">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="girls-society">
-      <div class="container">
-        <div class="girls-society-wrapper">
-          <div class="girls-society-instagram">
-            <p>Malika & Co - this is a real society of girls who show love to themselves</p>
-            <button>
-              <a href="https://insatgram.com/">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8.00005 4.25489C5.96779 4.25489 4.28392 5.90973 4.28392 7.97102C4.28392 10.0323 5.93876 11.6872 8.00005 11.6872C10.0613 11.6872 11.7162 10.0033 11.7162 7.97102C11.7162 5.93877 10.0323 4.25489 8.00005 4.25489ZM8.00005 10.3517C6.6936 10.3517 5.6194 9.27747 5.6194 7.97102C5.6194 6.66457 6.6936 5.59038 8.00005 5.59038C9.3065 5.59038 10.3807 6.66457 10.3807 7.97102C10.3807 9.27747 9.3065 10.3517 8.00005 10.3517Z"
-                    fill="#555555" />
-                  <path
-                    d="M11.8613 5.00971C12.3263 5.00971 12.7033 4.63276 12.7033 4.16778C12.7033 3.70279 12.3263 3.32584 11.8613 3.32584C11.3963 3.32584 11.0194 3.70279 11.0194 4.16778C11.0194 4.63276 11.3963 5.00971 11.8613 5.00971Z"
-                    fill="#555555" />
-                  <path
-                    d="M14.0388 1.99037C13.2839 1.2065 12.2097 0.800049 10.9904 0.800049H5.00973C2.48392 0.800049 0.800049 2.48392 0.800049 5.00973V10.9613C0.800049 12.2097 1.2065 13.2839 2.0194 14.0678C2.80327 14.8226 3.84844 15.2 5.03876 15.2H10.9613C12.2097 15.2 13.2549 14.7936 14.0097 14.0678C14.7936 13.313 15.2 12.2388 15.2 10.9904V5.00973C15.2 3.79037 14.7936 2.74521 14.0388 1.99037ZM13.9226 10.9904C13.9226 11.8904 13.6033 12.6162 13.0807 13.1097C12.5581 13.6033 11.8323 13.8646 10.9613 13.8646H5.03876C4.16779 13.8646 3.44198 13.6033 2.9194 13.1097C2.39682 12.5871 2.13553 11.8613 2.13553 10.9613V5.00973C2.13553 4.13876 2.39682 3.41295 2.9194 2.89037C3.41295 2.39682 4.16779 2.13553 5.03876 2.13553H11.0194C11.8904 2.13553 12.6162 2.39682 13.1388 2.9194C13.6323 3.44198 13.9226 4.16779 13.9226 5.00973V10.9904Z"
-                    fill="#555555" />
-                </svg>
-                Insatgram
-              </a>
-            </button>
-          </div>
-          <div class="girls-society-images">
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-1.jpg" alt="Society">
-            </div>
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-2.jpg" alt="Society">
-            </div>
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-1.jpg" alt="Society">
-            </div>
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-2.jpg" alt="Society">
-            </div>
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-3.jpg" alt="Society">
-            </div>
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-4.jpg" alt="Society">
-            </div>
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-3.jpg" alt="Society">
-            </div>
-            <div class="girls-society-image-item">
-              <img src="./assets/images/society-item-4.jpg" alt="Society">
+              but not on the mass market. </p>
+            <div class="about-ceo-review-wrapper">
+              <div class="about-ceo-review-owner">
+                <div class="about-ceo-review-image">
+                  <img src="../assets/images/ceo.jpg" alt="CEO, Founder">
+                </div>
+                <div class="about-ceo-review-info">
+                  <p>Malika</p>
+                  <p>CEO, Founder</p>
+                </div>
+              </div>
+              <img src="../assets/images/signature.png" alt="Signature">
             </div>
           </div>
         </div>
@@ -298,7 +194,7 @@
                 </a>
               </li>
             </ul>
-            <img src="./assets/images/signature.png" alt="Signature">
+            <img src="../assets/images/signature.png" alt="Signature">
           </div>
           <div class="navigation">
             <h6>Navigation</h6>
@@ -342,8 +238,7 @@
       </div>
     </div>
   </footer>
-
-  <script type="module" src="./app.js"></script>
+  <script src="../app.js"></script>
 </body>
 
 </html>

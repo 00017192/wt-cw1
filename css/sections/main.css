@@ -301,13 +301,13 @@ section#girls-society .girls-society-wrapper .girls-society-instagram {
   margin-bottom: 100px;
   /* media queries on 0-768px/768px+ */
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   section#girls-society .girls-society-wrapper .girls-society-instagram {
     flex-direction: column;
     align-items: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   section#girls-society .girls-society-wrapper .girls-society-instagram {
     flex-direction: row;
     justify-content: space-between;
@@ -317,12 +317,11 @@ section#girls-society .girls-society-wrapper .girls-society-instagram {
 section#girls-society .girls-society-wrapper .girls-society-instagram p {
   /*
           media queries on:
-            0-768px
-            768px-992px
+            0-992px
             992px+
         */
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   section#girls-society .girls-society-wrapper .girls-society-instagram p {
     width: 100%;
     margin-bottom: 24px;
@@ -331,13 +330,9 @@ section#girls-society .girls-society-wrapper .girls-society-instagram p {
     text-align: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  section#girls-society .girls-society-wrapper .girls-society-instagram p {
-    width: 50%;
-  }
-}
 @media screen and (min-width: 992px) {
   section#girls-society .girls-society-wrapper .girls-society-instagram p {
+    width: 50%;
     font-size: 48px;
     line-height: 60px;
   }
@@ -345,7 +340,7 @@ section#girls-society .girls-society-wrapper .girls-society-instagram p {
 section#girls-society .girls-society-wrapper .girls-society-instagram button {
   all: unset;
   padding: 28px 100px;
-  background: #EEE4DA;
+  background: var(--bizarre);
   border-radius: 60px;
   transition: all 400ms ease-in-out;
   /* media queries on 0-768px/768px+ */
@@ -361,11 +356,11 @@ section#girls-society .girls-society-wrapper .girls-society-instagram button {
   }
 }
 section#girls-society .girls-society-wrapper .girls-society-instagram button:hover {
-  background: #E7D2BD;
+  background: var(--double-spanish-white);
   cursor: pointer;
 }
 section#girls-society .girls-society-wrapper .girls-society-instagram button:hover a {
-  color: #B28E74;
+  color: var(--sandal);
 }
 section#girls-society .girls-society-wrapper .girls-society-instagram button:hover a svg path {
   fill: #B28E74;
