@@ -1,0 +1,341 @@
+/* section contacts */
+section#contacts {
+  padding: 100px 0;
+  background: var(--merino);
+  /* main wrapper */
+}
+section#contacts .contacts-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 36px;
+  /* heading */
+  /* irect image style */
+  /* conatct info*/
+  /* social networks */
+  /* products grid with images only */
+  /* contact form */
+}
+section#contacts .contacts-wrapper h2 {
+  font-size: 48px;
+  line-height: 52px;
+  /* align center */
+}
+@media screen and (max-width: 576px) {
+  section#contacts .contacts-wrapper h2 {
+    text-align: center;
+  }
+}
+section#contacts .contacts-wrapper > img {
+  width: 100%;
+  height: auto;
+}
+section#contacts .contacts-wrapper .contacts-info-wrapper {
+  width: 100%;
+  display: grid;
+  gap: 14px;
+  /*
+        media queries on:
+          0-768px
+          768px-1200px
+          1200px+
+      */
+  /* each item */
+}
+@media screen and (max-width: 768px) {
+  section#contacts .contacts-wrapper .contacts-info-wrapper {
+    grid-template: repeat(4, 1fr)/1fr;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  section#contacts .contacts-wrapper .contacts-info-wrapper {
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#contacts .contacts-wrapper .contacts-info-wrapper {
+    grid-template: 1fr/repeat(4, 1fr);
+  }
+}
+section#contacts .contacts-wrapper .contacts-info-wrapper .contact-item {
+  background: var(--bizarre);
+  border-radius: 6px;
+  padding: 42px;
+  /* shorten paddings */
+}
+@media screen and (max-width: 1200px) {
+  section#contacts .contacts-wrapper .contacts-info-wrapper .contact-item {
+    padding: 24px;
+  }
+}
+section#contacts .contacts-wrapper .contacts-info-wrapper .contact-item h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  opacity: 0.4;
+}
+section#contacts .contacts-wrapper .contacts-info-wrapper .contact-item span {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 23px;
+}
+section#contacts .contacts-wrapper .socials-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* media on 0-992px */
+}
+@media screen and (max-width: 992px) {
+  section#contacts .contacts-wrapper .socials-wrapper {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: 24px;
+  }
+}
+section#contacts .contacts-wrapper .socials-wrapper p {
+  width: 40%;
+  font-size: 32px;
+  line-height: 48px;
+  /* media queries on 0-576px;576px+ */
+}
+@media screen and (max-width: 576px) {
+  section#contacts .contacts-wrapper .socials-wrapper p {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  section#contacts .contacts-wrapper .socials-wrapper p {
+    width: 100%;
+    text-align: center;
+  }
+}
+section#contacts .contacts-wrapper .socials-wrapper .socials {
+  width: auto;
+  display: flex;
+}
+section#contacts .contacts-wrapper .socials-wrapper .socials li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-right: 16px;
+  background: var(--bizarre);
+  border-radius: 31px;
+  /* change icons' sizes */
+}
+@media screen and (max-width: 576px) {
+  section#contacts .contacts-wrapper .socials-wrapper .socials li {
+    width: 32px;
+    height: 32px;
+  }
+}
+section#contacts .contacts-wrapper .socials-wrapper .socials li a {
+  display: inline-flex;
+}
+section#contacts .contacts-wrapper .socials-wrapper .socials li a svg {
+  width: auto;
+  height: 18px;
+  /* change icons' sizes */
+}
+@media screen and (max-width: 576px) {
+  section#contacts .contacts-wrapper .socials-wrapper .socials li a svg {
+    height: 14px;
+  }
+}
+section#contacts .contacts-wrapper .products-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+  gap: 20px;
+  /* change grid tempalte */
+}
+@media screen and (max-width: 992px) {
+  section#contacts .contacts-wrapper .products-wrapper {
+    grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+  }
+}
+section#contacts .contacts-wrapper .products-wrapper .product-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+section#contacts .contacts-wrapper .products-wrapper .product-item:hover {
+  cursor: pointer;
+}
+section#contacts .contacts-wrapper .products-wrapper .product-item:hover img {
+  transform: scale(1.1);
+}
+section#contacts .contacts-wrapper .products-wrapper .product-item img {
+  width: 100%;
+  height: 100%;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 70px 0 50px;
+  /* media query on 0-992px */
+  /* image wrapper */
+}
+@media screen and (max-width: 992px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper {
+    row-gap: 60px;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* media query on 0-992px */
+}
+@media screen and (max-width: 992px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper .contact-form {
+    width: 100%;
+    align-items: center;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form h4 {
+  margin-bottom: 70px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--sandrift);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form h5 {
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper .contact-form h5 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* media query on 0-992px */
+  /* error */
+  /* change color of span next of input with class error */
+  /* submit button */
+}
+@media screen and (max-width: 992px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form {
+    align-items: center;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form label {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--sandrift);
+  /* media query on 0-576px */
+}
+@media screen and (max-width: 576px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form label {
+    text-align: center;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form label[for="number"]::after {
+  content: "+";
+  position: absolute;
+  bottom: -47px;
+  left: 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form input {
+  all: unset;
+  box-sizing: border-box;
+  width: 360px;
+  font-size: 18px;
+  line-height: 32px;
+  border-bottom: 1px solid var(--dark-grey);
+  /* media query on 0-992px */
+  /* start each name with capital letter */
+  /* to add + */
+  /* error sign */
+}
+@media screen and (max-width: 992px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form input {
+    width: 100%;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form input#name {
+  text-transform: capitalize;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form input#number {
+  padding-left: 14px;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form input.error {
+  color: red;
+  border-bottom-color: red;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form span {
+  opacity: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 18px;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form input.error ~ span {
+  opacity: 1;
+  color: red;
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form button {
+  width: 360px;
+  padding: 28px 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  background: var(--bizarre);
+  border-radius: 60px;
+  border: 0;
+  outline: 0;
+  /* change size of the button */
+}
+@media screen and (max-width: 576px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form button {
+    width: 300px;
+    padding: 18px 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .contact-form form button:hover {
+  cursor: pointer;
+  background: var(--double-spanish-white);
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .image-wrapper {
+  width: 50%;
+  height: 100%;
+  /* change size of image on mediq query 0-992px*/
+  /* image size */
+}
+@media screen and (max-width: 992px) {
+  section#contacts .contacts-wrapper .contact-form-wrapper .image-wrapper {
+    width: 100%;
+    order: -1;
+    height: 540px;
+  }
+}
+section#contacts .contacts-wrapper .contact-form-wrapper .image-wrapper img {
+  width: 100%;
+  height: 100%;
+}

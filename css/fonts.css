@@ -1,24 +1,24 @@
 /* Cera Pro Light(300) */
 @font-face {
-  font-family: "Cera Pro";
-  src: url(../assets/fonts/light.otf);
+  font-family: "Poppins";
+  src: url(../assets/fonts/light.ttf);
   font-weight: 300;
 }
 /* Cera Pro Regular(400) */
 @font-face {
-  font-family: "Cera Pro";
-  src: url(../assets/fonts/regular.otf);
+  font-family: "Poppins";
+  src: url(../assets/fonts/regular.ttf);
   font-weight: 400;
 }
 /* Cera Pro Medium(500) */
 @font-face {
-  font-family: "Cera Pro";
-  src: url(../assets/fonts/medium.otf);
+  font-family: "Poppins";
+  src: url(../assets/fonts/medium.ttf);
   font-weight: 500;
 }
 /* Cera Pro Bold(600) */
 @font-face {
-  font-family: "Cera Pro";
-  src: url(../assets/fonts/bold.otf);
+  font-family: "Poppins";
+  src: url(../assets/fonts/semibold.ttf);
   font-weight: 600;
 }

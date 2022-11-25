@@ -2,20 +2,20 @@
 section#preview {
   position: relative;
   z-index: -1;
-  margin-top: -130px;
-  padding-top: 130px;
+  margin-top: -135px;
+  padding-top: 135px;
   height: 900px;
   background: url(../../assets/images/header-background.jpg) center / cover no-repeat;
   /* media query on 0-768px -> shorten margin-top */
 }
 @media screen and (max-width: 768px) {
   section#preview {
-    margin-top: -80px;
+    margin-top: -85px;
   }
 }
 section#preview .preview-wrapper {
   position: relative;
-  top: -130px;
+  top: -135px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -290,11 +290,11 @@ section#about .about-wrapper .about-info .about-company-ceo img {
   height: 66px;
 }
 /* fourth section */
-section#girls-society {
+section#elegance-society {
   padding: 127px 0;
   background: var(--merino);
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -302,19 +302,19 @@ section#girls-society .girls-society-wrapper .girls-society-instagram {
   /* media queries on 0-768px/768px+ */
 }
 @media screen and (max-width: 992px) {
-  section#girls-society .girls-society-wrapper .girls-society-instagram {
+  section#elegance-society .elegance-society-wrapper .elegance-society-instagram {
     flex-direction: column;
     align-items: center;
   }
 }
 @media screen and (min-width: 992px) {
-  section#girls-society .girls-society-wrapper .girls-society-instagram {
+  section#elegance-society .elegance-society-wrapper .elegance-society-instagram {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
   }
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram p {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram p {
   /*
           media queries on:
             0-992px
@@ -322,7 +322,7 @@ section#girls-society .girls-society-wrapper .girls-society-instagram p {
         */
 }
 @media screen and (max-width: 992px) {
-  section#girls-society .girls-society-wrapper .girls-society-instagram p {
+  section#elegance-society .elegance-society-wrapper .elegance-society-instagram p {
     width: 100%;
     margin-bottom: 24px;
     font-size: 32px;
@@ -331,13 +331,13 @@ section#girls-society .girls-society-wrapper .girls-society-instagram p {
   }
 }
 @media screen and (min-width: 992px) {
-  section#girls-society .girls-society-wrapper .girls-society-instagram p {
+  section#elegance-society .elegance-society-wrapper .elegance-society-instagram p {
     width: 50%;
     font-size: 48px;
     line-height: 60px;
   }
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram button {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram button {
   all: unset;
   padding: 28px 100px;
   background: var(--bizarre);
@@ -346,55 +346,56 @@ section#girls-society .girls-society-wrapper .girls-society-instagram button {
   /* media queries on 0-768px/768px+ */
 }
 @media screen and (max-width: 768px) {
-  section#girls-society .girls-society-wrapper .girls-society-instagram button {
+  section#elegance-society .elegance-society-wrapper .elegance-society-instagram button {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  section#girls-society .girls-society-wrapper .girls-society-instagram button {
+  section#elegance-society .elegance-society-wrapper .elegance-society-instagram button {
     text-align: left;
   }
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram button:hover {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram button:hover {
   background: var(--double-spanish-white);
   cursor: pointer;
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram button:hover a {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram button:hover a {
   color: var(--sandal);
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram button:hover a svg path {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram button:hover a svg path {
   fill: #B28E74;
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram button a {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram button a {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
 }
-section#girls-society .girls-society-wrapper .girls-society-instagram button a img {
+section#elegance-society .elegance-society-wrapper .elegance-society-instagram button a img {
   width: 16px;
   height: 16px;
 }
-section#girls-society .girls-society-wrapper .girls-society-images {
+section#elegance-society .elegance-society-wrapper .elegance-society-images {
   display: grid;
   grid-gap: 20px;
   grid-template: repeat(2, 1fr)/repeat(4, 1fr);
 }
 @media screen and (max-width: 768px) {
-  section#girls-society .girls-society-wrapper .girls-society-images {
+  section#elegance-society .elegance-society-wrapper .elegance-society-images {
     grid-template: repeat(4, 1fr)/repeat(2, 1fr);
   }
 }
-section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item {
+section#elegance-society .elegance-society-wrapper .elegance-society-images .elegance-society-image-item {
   overflow: hidden;
+  border-radius: 10px;
 }
-section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item:hover {
+section#elegance-society .elegance-society-wrapper .elegance-society-images .elegance-society-image-item:hover {
   cursor: pointer;
 }
-section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item:hover img {
+section#elegance-society .elegance-society-wrapper .elegance-society-images .elegance-society-image-item:hover img {
   transform: scale(1.1);
 }
-section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item img {
+section#elegance-society .elegance-society-wrapper .elegance-society-images .elegance-society-image-item img {
   width: 100%;
   height: 100%;
 }
