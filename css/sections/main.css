@@ -1,0 +1,404 @@
+/* first section with background and text */
+section#preview {
+  position: relative;
+  z-index: -1;
+  margin-top: -130px;
+  padding-top: 130px;
+  height: 900px;
+  background: url(../../assets/images/header-background.jpg) center / cover no-repeat;
+  /* media query on 0-768px -> shorten margin-top */
+}
+@media screen and (max-width: 768px) {
+  section#preview {
+    margin-top: -80px;
+  }
+}
+section#preview .preview-wrapper {
+  position: relative;
+  top: -130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+section#preview .preview-wrapper h2 {
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--white);
+  border-bottom: 5px solid var(--white);
+  font-weight: 500;
+  text-align: center;
+}
+/* second section with products */
+section#products {
+  padding: 70px 0;
+  background: var(--merino);
+}
+section#products .products-wrapper {
+  width: 100%;
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  /*
+      media queries on:
+        0-440px
+        440px-768px
+        768px-1200px
+        1200px+
+    */
+  /* single product item */
+}
+@media screen and (max-width: 440px) {
+  section#products .products-wrapper {
+    grid-template: repeat(3, 1fr)/repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 768px) {
+  section#products .products-wrapper {
+    grid-template: repeat(6, 1fr)/repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  section#products .products-wrapper {
+    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#products .products-wrapper {
+    grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+  }
+}
+section#products .products-wrapper .product-item {
+  position: relative;
+  overflow: hidden;
+  height: 430px;
+  /* on hover state -> change cursor/scale image */
+  /* image properties */
+}
+@media screen and (max-width: 440px) {
+  section#products .products-wrapper .product-item[data-main-card="false"] {
+    display: none;
+  }
+}
+section#products .products-wrapper .product-item:hover {
+  cursor: pointer;
+}
+section#products .products-wrapper .product-item:hover img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+section#products .products-wrapper .product-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  /* media queries on 0-576px; 576px+ */
+}
+@media screen and (max-width: 440px) {
+  section#products .products-wrapper .product-item img {
+    width: calc(100% - 24px);
+    min-height: 100%;
+  }
+}
+@media screen and (min-width: 440px) {
+  section#products .products-wrapper .product-item img {
+    width: auto;
+    height: 100%;
+  }
+}
+section#products .products-wrapper .product-item .product-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+/* third section */
+section#about {
+  height: 100%;
+  padding-bottom: 10px;
+  background: var(--merino);
+}
+section#about .about-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section#about .about-wrapper .about-image {
+  /* media queries on 0-768px;768px+ */
+  /* image width and height -> 100% */
+}
+@media screen and (min-width: 768px) {
+  section#about .about-wrapper .about-image {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#about .about-wrapper .about-image {
+    width: 100%;
+    height: 480px;
+    margin-bottom: 60px;
+  }
+}
+section#about .about-wrapper .about-image img {
+  height: 100%;
+  width: 100%;
+}
+section#about .about-wrapper .about-info {
+  /*
+        media queries on:
+          0-576px
+          576px-768px
+          768px-1200px
+          1200px+
+      */
+  /* logo styling */
+  /* all direct paragraphs styling */
+  /* style founder text and signature */
+}
+@media screen and (max-width: 576px) {
+  section#about .about-wrapper .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  section#about .about-wrapper .about-info {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  section#about .about-wrapper .about-info {
+    width: 50%;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#about .about-wrapper .about-info {
+    padding-left: 114px;
+  }
+}
+section#about .about-wrapper .about-info h5 {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--sandrift);
+  font-weight: 600;
+  letter-spacing: 4px;
+  /*
+          media queries on:
+            576px-1200px
+            1200px+
+        */
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  section#about .about-wrapper .about-info h5 {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#about .about-wrapper .about-info h5 {
+    margin-bottom: 60px;
+  }
+}
+section#about .about-wrapper .about-info > p {
+  /* first direct paragraph */
+  /* second(last) direct paragraph */
+}
+section#about .about-wrapper .about-info > p:first-of-type {
+  /*
+            media queries on:
+              0-576px
+              576px-1200px
+              1200px+
+          */
+}
+@media screen and (max-width: 576px) {
+  section#about .about-wrapper .about-info > p:first-of-type {
+    text-align: center;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  section#about .about-wrapper .about-info > p:first-of-type {
+    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#about .about-wrapper .about-info > p:first-of-type {
+    margin-bottom: 34px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+section#about .about-wrapper .about-info > p:nth-of-type(2) {
+  /*
+            media queries on:
+              0-576px
+              576px-1200px
+              1200px+
+          */
+}
+@media screen and (max-width: 576px) {
+  section#about .about-wrapper .about-info > p:nth-of-type(2) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  section#about .about-wrapper .about-info > p:nth-of-type(2) {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section#about .about-wrapper .about-info > p:nth-of-type(2) {
+    margin-bottom: 54px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+section#about .about-wrapper .about-info .about-company-ceo {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+}
+section#about .about-wrapper .about-info .about-company-ceo p {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 32px;
+}
+section#about .about-wrapper .about-info .about-company-ceo p span {
+  font-size: 14px;
+  line-height: 20px;
+}
+section#about .about-wrapper .about-info .about-company-ceo img {
+  height: 66px;
+}
+/* fourth section */
+section#girls-society {
+  padding: 127px 0;
+  background: var(--merino);
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 100px;
+  /* media queries on 0-768px/768px+ */
+}
+@media screen and (max-width: 768px) {
+  section#girls-society .girls-society-wrapper .girls-society-instagram {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#girls-society .girls-society-wrapper .girls-society-instagram {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram p {
+  /*
+          media queries on:
+            0-768px
+            768px-992px
+            992px+
+        */
+}
+@media screen and (max-width: 768px) {
+  section#girls-society .girls-society-wrapper .girls-society-instagram p {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section#girls-society .girls-society-wrapper .girls-society-instagram p {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section#girls-society .girls-society-wrapper .girls-society-instagram p {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram button {
+  all: unset;
+  padding: 28px 100px;
+  background: #EEE4DA;
+  border-radius: 60px;
+  transition: all 400ms ease-in-out;
+  /* media queries on 0-768px/768px+ */
+}
+@media screen and (max-width: 768px) {
+  section#girls-society .girls-society-wrapper .girls-society-instagram button {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#girls-society .girls-society-wrapper .girls-society-instagram button {
+    text-align: left;
+  }
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram button:hover {
+  background: #E7D2BD;
+  cursor: pointer;
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram button:hover a {
+  color: #B28E74;
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram button:hover a svg path {
+  fill: #B28E74;
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+section#girls-society .girls-society-wrapper .girls-society-instagram button a img {
+  width: 16px;
+  height: 16px;
+}
+section#girls-society .girls-society-wrapper .girls-society-images {
+  display: grid;
+  grid-gap: 20px;
+  grid-template: repeat(2, 1fr)/repeat(4, 1fr);
+}
+@media screen and (max-width: 768px) {
+  section#girls-society .girls-society-wrapper .girls-society-images {
+    grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+  }
+}
+section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item {
+  overflow: hidden;
+}
+section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item:hover {
+  cursor: pointer;
+}
+section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item:hover img {
+  transform: scale(1.1);
+}
+section#girls-society .girls-society-wrapper .girls-society-images .girls-society-image-item img {
+  width: 100%;
+  height: 100%;
+}
