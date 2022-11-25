@@ -184,6 +184,7 @@ section#about .about-wrapper .about-info {
 @media screen and (min-width: 1200px) {
   section#about .about-wrapper .about-info {
     padding-left: 114px;
+    width: 50%;
   }
 }
 section#about .about-wrapper .about-info h5 {
